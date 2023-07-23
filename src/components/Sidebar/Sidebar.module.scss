@@ -1,0 +1,22 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+  text-align: start;
+  grid-area: B;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 60px 0 0;
+}
+
+.link {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  padding: 8px 20px;
+  transition: all .3s ease;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    transition: all .3s ease;
+  }
+}

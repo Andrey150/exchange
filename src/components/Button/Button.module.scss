@@ -1,0 +1,13 @@
+.Button {
+  border: 1px solid #E2E3E5;
+  border-radius: 4px;
+  width: 100%;
+  padding: 4px 0;
+  cursor: pointer;
+  color: #80A6FF;
+  transition: all .3s ease;
+  &:hover {
+    background-color: #f1f0f0;
+    transition: all .3s ease;
+  }
+}

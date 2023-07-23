@@ -1,0 +1,10 @@
+.Layout {}
+
+.Outlet {
+  display: grid;
+  grid-template-areas:
+          "A A A A"
+          "B C C C"
+          "B C C C";
+  background-color: #f5f5f5;
+}
