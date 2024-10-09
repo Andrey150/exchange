@@ -15,6 +15,7 @@ export const CurrencyConverter: FC<CurrencyConverterProps> = () => {
 
 
   const HandleButton = (inputValue:string) => {
+    if (!inputValue.length) return;
     const inputArr = inputValue.split(" ");
     const fromCurrency = inputArr[1].toUpperCase();
     const toCurrency = inputArr[inputArr.length -1].toUpperCase();
@@ -26,6 +27,8 @@ export const CurrencyConverter: FC<CurrencyConverterProps> = () => {
       })
   }
 
+  
+
   return (
     <div className={styles.CurrencyConverter}>
       <div className={styles.convertWrap}>
@@ -35,7 +38,7 @@ export const CurrencyConverter: FC<CurrencyConverterProps> = () => {
           type="text"
           className={styles.input}
           onChange={(e) => setInputValue(e.target.value)}
-          placeholder='15 USD in RUB'
+          placeholder=''
         />
         <Button children={"Convert"} onClick={() => HandleButton(inputValue)}/>
         <div className={styles.block}>
